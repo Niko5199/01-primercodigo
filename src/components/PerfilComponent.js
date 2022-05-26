@@ -1,3 +1,6 @@
+import SkillComponent from "./SkillComponent";
+//import Perfil from "../images/perfil.js";
+
 function PerfilComponent({ name, skills }) {
   return (
     <div className="containerPerfil">
@@ -10,7 +13,7 @@ function PerfilComponent({ name, skills }) {
           <p>Mis habilidades son:</p>
           <ul className="skillsList">
             {skills.map(skill => (
-              <li key={skill.id}>{skill.name}</li>
+              <SkillComponent key={skill.id} {...skill}></SkillComponent>
             ))}
           </ul>
         </div>

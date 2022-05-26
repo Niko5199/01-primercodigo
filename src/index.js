@@ -2,22 +2,23 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
 import PerfilComponent from "./components/PerfilComponent";
+import { nanoid } from "nanoid";
 
 const rootDiv = document.querySelector("#root");
 const root = createRoot(rootDiv);
 const skills = [
   {
-    id: 1,
+    id: nanoid(),
     name: "JS",
   },
 
   {
-    id: 2,
+    id: nanoid(),
     name: "React.js",
   },
 
   {
-    id: 3,
+    id: nanoid(),
     name: "Node.Js",
   },
 ];
